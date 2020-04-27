@@ -644,7 +644,7 @@ open class EasyTipView: UIView {
         case .view (let view):
             addSubview(view)
             layoutIfNeeded()
-            view.frame = bubbleFrame
+            view.frame = getContentRect(from: bubbleFrame)
         }
         
         drawShadow()
